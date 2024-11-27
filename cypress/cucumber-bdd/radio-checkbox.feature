@@ -17,3 +17,4 @@ Feature: testing UI elements
         Then first and last checkboxes should be selected
         
     Scenario: Testing Radio buttons on the test automation practice page
+        Given 
