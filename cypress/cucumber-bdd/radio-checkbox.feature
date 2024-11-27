@@ -18,3 +18,4 @@ Feature: testing UI elements
         
     Scenario: Testing Radio buttons on the test automation practice page
         Given 
+        When 
