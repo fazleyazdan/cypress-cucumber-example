@@ -26,14 +26,6 @@
         // Already asserted in the previous step, but can add any additional logic if required.
       });
        
-      When("I select all the checkbox", ()=>{
-        cy.xpath("//input[contains(@value,'day')]").check()
-      })
-
-      Then("it should be unchecked", () => {
-        cy.xpath("//input[contains(@value,'day')]").check().should("be.checked")
-      });
-      
       When("I select all the checkboxes", ()=>{
         cy.xpath("//input[contains(@value,'day')]").check()
       })
@@ -83,4 +75,5 @@
       Then("{string} radio button should be unchecked and {string} radio button should be checked", (mradiobtn,fradiobtn)=>{
         cy.get(`#${mradiobtn}`).should("not.be.checked")
         cy.get(`#${fradiobtn}`).should("be.checked")
+
       })
