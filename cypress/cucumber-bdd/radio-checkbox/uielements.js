@@ -63,3 +63,24 @@
         cy.xpath("//input[contains(@value,'day')]").last().should("be.checked")
 
       })
+
+      Given("I navigate to {string}",(url)=>{
+        cy.visit(url)
+      })
+
+      When("I click {string} radio button", (mradiobtn)=>{
+        cy.get(`#${mradiobtn}`).click().should("be.checked")
+      })
+
+      Then("it should be selected", ()=>{
+
+      })
+
+      When("I click {string} radio button", (fradiobtn)=>{
+        cy.get(`#${fradiobtn}`).click()
+      })
+
+      Then("{string} radio button should be unchecked and {string} radio button should be checked", (mradiobtn,fradiobtn)=>{
+        cy.get(`#${mradiobtn}`).should("not.be.checked")
+        cy.get(`#${fradiobtn}`).should("be.checked")
+      })
