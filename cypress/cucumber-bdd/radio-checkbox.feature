@@ -17,5 +17,9 @@ Feature: testing UI elements
         Then first and last checkboxes should be selected
         
     Scenario: Testing Radio buttons on the test automation practice page
-        Given 
-        When 
+        Given I navigate to "https://testautomationpractice.blogspot.com/"
+        When I click "male" radio button
+        Then it should be selected
+        When I click "female" radio button
+        Then "male" radio button should be unchecked and "female" radio button should be checked
+        
