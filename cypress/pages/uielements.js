@@ -7,26 +7,33 @@ class Uielements{
 
     static verifyVisibility(checkbox)
     {
-        cy.get(`#${checkbox}`).should("be.visible")
+       cy.get(`#${checkbox}`).should("be.visible")
     }
 
     static selectCheckbox(checkbox)
     {
-        cy.get(`#${checkbox}`).check().should("be.checked")
+       return cy.get(`#${checkbox}`)
     }
 
     static unselectCheckbox(checkbox)
     {
-        cy.get(`#${checkbox}`).uncheck().should("not.be.checked")
+        return cy.get(`#${checkbox}`)
     }
 
-    static selectAllCheckbox()
+    static AllCheckbox()
     {
-        cy.xpath("//input[contains(@value,'day')]").check()
+       return cy.xpath("//input[contains(@value,'day')]")
     }
 
-    
-    
+    static maleRadioBtn(mradiobtn)
+    {
+        return cy.get(`#${mradiobtn}`)
+    }
+
+    static femaleRadioBtn(fradiobtn)
+    {
+        return cy.get(`#${fradiobtn}`)
+    }
 
 }
 
