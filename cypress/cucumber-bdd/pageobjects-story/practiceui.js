@@ -1,17 +1,18 @@
 
 import { Given,When,Then, And } from "cypress-cucumber-preprocessor/steps"
-
+import pages from "../../pages/uielements" 
+import Uielements from "../../pages/uielements"
 
 Given("I navigate to {string}",(url)=>{
-  cy.visit(url)
+  Uielements.visitweb(url)
 })
 
 Then("I verify that the {string} checkbox is visible", (checkbox)=>{
-  cy.get(`#${checkbox}`).should("be.visible")
+  Uielements.verifyVisibility(checkbox)
 })
 
 When("I click on {string} checkbox", (checkbox)=>{
-  cy.get(`#${checkbox}`).check().should("be.checked")
+  Uielements.selectCheckbox(checkbox).check().should("be.checked")
 })
 
 Then("it should be checked", () => {
@@ -19,7 +20,7 @@ Then("it should be checked", () => {
 });
 
 When("I deselect the {string} checkbox", (checkbox)=>{
-  cy.get(`#${checkbox}`).uncheck().should('not.be.checked')
+  Uielements.unselectCheckbox(checkbox).uncheck().should('not.be.checked')
 })
 
 Then("it should be unchecked", () => {
@@ -27,41 +28,42 @@ Then("it should be unchecked", () => {
 });
  
 When("I select all the checkboxes", ()=>{
-  cy.xpath("//input[contains(@value,'day')]").check()
+  Uielements.AllCheckbox().check()
 })
 
 Then("all the checkboxes should be selected", () => {
-  cy.xpath("//input[contains(@value,'day')]").should("be.checked")
+  Uielements.AllCheckbox().should("be.checked")
 });
 
 When("I deselect all the checkboxes", ()=>{
-  cy.xpath("//input[contains(@value,'day')]").uncheck()
+  Uielements.AllCheckbox().uncheck()
 })
 
 Then("all the checkboxes should be unchecked", () => {
-  cy.xpath("//input[contains(@value,'day')]").should("not.be.checked")
+  Uielements.AllCheckbox().should("not.be.checked")
 });
 
 When("I select the first checkbox", ()=> {
-  cy.xpath("//input[contains(@value,'day')]").first().check()
+  Uielements.AllCheckbox().first().check()
 })
 
 And("I select the last checkbox", ()=>{
-  cy.xpath("//input[contains(@value,'day')]").last().check()
+  Uielements.AllCheckbox().last().check()
+
 })
   
 Then("first and last checkboxes should be selected", ()=> {
-  cy.xpath("//input[contains(@value,'day')]").first().should("be.checked")
-  cy.xpath("//input[contains(@value,'day')]").last().should("be.checked")
+  Uielements.AllCheckbox().first().should("be.checked")
+  Uielements.AllCheckbox().last().should("be.checked")
 
 })
 
 Given("I navigate to {string}",(url)=>{
-  cy.visit(url)
+  Uielements.visitweb(url)
 })
 
 When("I click {string} radio button", (mradiobtn)=>{
-  cy.get(`#${mradiobtn}`).click().should("be.checked")
+  Uielements.maleRadioBtn(mradiobtn).click().should("be.checked")
 })
 
 Then("it should be selected", ()=>{
@@ -69,11 +71,10 @@ Then("it should be selected", ()=>{
 })
 
 When("I click {string} radio button", (fradiobtn)=>{
-  cy.get(`#${fradiobtn}`).click()
+  Uielements.femaleRadioBtn(mradiobtn).click()
 })
 
 Then("{string} radio button should be unchecked and {string} radio button should be checked", (mradiobtn,fradiobtn)=>{
-  cy.get(`#${mradiobtn}`).should("not.be.checked")
-  cy.get(`#${fradiobtn}`).should("be.checked")
-
+  Uielements.maleRadioBtn(mradiobtn).should("not.be.checked")
+  Uielements.femaleRadioBtn(fradiobtn).should("be.checked")
 })
