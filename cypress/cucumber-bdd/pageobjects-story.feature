@@ -22,4 +22,3 @@ Feature: testing UI elements
         Then it should be selected
         When I click "female" radio button
         Then "male" radio button should be unchecked and "female" radio button should be checked
-        
