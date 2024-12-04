@@ -3,17 +3,18 @@
     "@cypress/xpath": "^2.0.3",
     "cypress": "^13.11.0",
     "cypress-cucumber-preprocessor": "^4.3.1",
-    "cypress-xpath": "^2.0.1"
+    "cypress-xpath": "^2.0.1",
+    "multiple-cucumber-html-reporter": "^3.8.0"
   },
   "cypress-cucumber-preprocessor": {
     "nonGlobalStepDefinitions": true,
     "stepDefinitions": "cypress/cucumber-bdd",
     "cucumberJson": {
-    "generate": true,
-    "outputFolder": "cypress/cucumber-json-report",
-    "filePrefix": "",
-    "fileSuffix": ".cucumber"
-  }
+      "generate": true,
+      "outputFolder": "cypress/cucumber-json-report",
+      "filePrefix": "",
+      "fileSuffix": ".cucumber"
+    }
   },
   "dependencies": {
     "cucumber-html-reporter": "^7.2.0"
