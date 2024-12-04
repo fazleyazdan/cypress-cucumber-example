@@ -7,7 +7,13 @@
   },
   "cypress-cucumber-preprocessor": {
     "nonGlobalStepDefinitions": true,
-    "stepDefinitions": "cypress/cucumber-bdd"
+    "stepDefinitions": "cypress/cucumber-bdd",
+    "cucumberJson": {
+    "generate": true,
+    "outputFolder": "cypress/cucumber-json-report",
+    "filePrefix": "",
+    "fileSuffix": ".cucumber"
+  }
   },
   "dependencies": {
     "cucumber-html-reporter": "^7.2.0"
