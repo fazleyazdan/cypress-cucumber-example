@@ -1,0 +1,113 @@
+[
+  {
+    "description": "    as a user i am testing the login functionality, whether its working or not",
+    "keyword": "Feature",
+    "name": "as a user i should be able to use the login functionality and select different option on homepage",
+    "line": 1,
+    "id": "as-a-user-i-should-be-able-to-use-the-login-functionality-and-select-different-option-on-homepage",
+    "tags": [],
+    "uri": "multiple-scenario.feature",
+    "elements": [
+      {
+        "id": "as-a-user-i-should-be-able-to-use-the-login-functionality-and-select-different-option-on-homepage;successfully-logging-in",
+        "keyword": "Scenario",
+        "line": 4,
+        "name": "Successfully logging in",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 5,
+            "name": "I successfully navigate to the home page",
+            "result": {
+              "status": "passed",
+              "duration": 1820000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 6,
+            "name": "I enter the username \"Admin\"",
+            "result": {
+              "status": "passed",
+              "duration": 1301000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 7,
+            "name": "I enter the password \"admin123\"",
+            "result": {
+              "status": "passed",
+              "duration": 397000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 8,
+            "name": "I click on the submit button",
+            "result": {
+              "status": "passed",
+              "duration": 1321000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 9,
+            "name": "I should be successfully logged in and navigated to the homepage",
+            "result": {
+              "status": "passed",
+              "duration": 29000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "as-a-user-i-should-be-able-to-use-the-login-functionality-and-select-different-option-on-homepage;navigating-to-admin-dashboard",
+        "keyword": "Scenario",
+        "line": 11,
+        "name": "Navigating to Admin Dashboard",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 12,
+            "name": "I am logged in as \"Admin\" with password \"admin123\"",
+            "result": {
+              "status": "passed",
+              "duration": 4558000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 13,
+            "name": "I click on the Admin option",
+            "result": {
+              "status": "passed",
+              "duration": 2544000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 14,
+            "name": "I should be navigated to the Admin Dashboard",
+            "result": {
+              "status": "passed",
+              "duration": 15000000
+            }
+          }
+        ]
+      }
+    ]
+  }
+]

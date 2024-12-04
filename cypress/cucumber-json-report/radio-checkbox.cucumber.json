@@ -1,0 +1,213 @@
+[
+  {
+    "description": "    Here I am am testing radio buttons & checkbox to validate wether its working fine",
+    "keyword": "Feature",
+    "name": "testing UI elements",
+    "line": 1,
+    "id": "testing-ui-elements",
+    "tags": [],
+    "uri": "radio-checkbox.feature",
+    "elements": [
+      {
+        "id": "testing-ui-elements;testing-checkboxes-on-the-test-automation-practice-page",
+        "keyword": "Scenario",
+        "line": 4,
+        "name": "Testing checkboxes on the test automation practice page",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 5,
+            "name": "I navigate to \"https://testautomationpractice.blogspot.com/\"",
+            "result": {
+              "status": "passed",
+              "duration": 4319000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 6,
+            "name": "I verify that the \"sunday\" checkbox is visible",
+            "result": {
+              "status": "passed",
+              "duration": 43000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 7,
+            "name": "I click on \"sunday\" checkbox",
+            "result": {
+              "status": "passed",
+              "duration": 148000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 8,
+            "name": "it should be checked",
+            "result": {
+              "status": "passed",
+              "duration": 6000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 9,
+            "name": "I deselect the \"sunday\" checkbox",
+            "result": {
+              "status": "passed",
+              "duration": 123000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 10,
+            "name": "it should be unchecked",
+            "result": {
+              "status": "passed",
+              "duration": 5000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 11,
+            "name": "I select all the checkboxes",
+            "result": {
+              "status": "passed",
+              "duration": 765000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 12,
+            "name": "all the checkboxes should be selected",
+            "result": {
+              "status": "passed",
+              "duration": 26000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 13,
+            "name": "I deselect all the checkboxes",
+            "result": {
+              "status": "passed",
+              "duration": 673000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 14,
+            "name": "all the checkboxes should be unchecked",
+            "result": {
+              "status": "passed",
+              "duration": 25000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 15,
+            "name": "I select the first checkbox",
+            "result": {
+              "status": "passed",
+              "duration": 119000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 16,
+            "name": "I select the last checkbox",
+            "result": {
+              "status": "passed",
+              "duration": 123000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 17,
+            "name": "first and last checkboxes should be selected",
+            "result": {
+              "status": "passed",
+              "duration": 48000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "testing-ui-elements;testing-radio-buttons-on-the-test-automation-practice-page",
+        "keyword": "Scenario",
+        "line": 19,
+        "name": "Testing Radio buttons on the test automation practice page",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 20,
+            "name": "I navigate to \"https://testautomationpractice.blogspot.com/\"",
+            "result": {
+              "status": "passed",
+              "duration": 3806000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 21,
+            "name": "I click \"male\" radio button",
+            "result": {
+              "status": "passed",
+              "duration": 143000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 22,
+            "name": "it should be selected",
+            "result": {
+              "status": "passed",
+              "duration": 6000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 23,
+            "name": "I click \"female\" radio button",
+            "result": {
+              "status": "passed",
+              "duration": 118000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 24,
+            "name": "\"male\" radio button should be unchecked and \"female\" radio button should be checked",
+            "result": {
+              "status": "passed",
+              "duration": 49000000
+            }
+          }
+        ]
+      }
+    ]
+  }
+]
