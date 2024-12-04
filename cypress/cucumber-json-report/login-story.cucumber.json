@@ -1,0 +1,73 @@
+[
+  {
+    "description": "    as a user i am testing the login functionality, whether its working or not",
+    "keyword": "Feature",
+    "name": "as a user i should be able to use the login functionality",
+    "line": 1,
+    "id": "as-a-user-i-should-be-able-to-use-the-login-functionality",
+    "tags": [],
+    "uri": "login-story.feature",
+    "elements": [
+      {
+        "id": "as-a-user-i-should-be-able-to-use-the-login-functionality;as-a-user-i-should-be-able-to-login",
+        "keyword": "Scenario",
+        "line": 4,
+        "name": "as a user i should be able to login",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 5,
+            "name": "i successfully navigated to home page",
+            "result": {
+              "status": "passed",
+              "duration": 5717000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 6,
+            "name": "i entered the username \"Admin\"",
+            "result": {
+              "status": "passed",
+              "duration": 541000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 7,
+            "name": "i entered the password \"admin123\"",
+            "result": {
+              "status": "passed",
+              "duration": 350000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 8,
+            "name": "i clicked on the submit button",
+            "result": {
+              "status": "passed",
+              "duration": 1344000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 9,
+            "name": "i should be successfully logged in and navigated to homepage",
+            "result": {
+              "status": "passed",
+              "duration": 17000000
+            }
+          }
+        ]
+      }
+    ]
+  }
+]
