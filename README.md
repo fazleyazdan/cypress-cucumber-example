@@ -10,11 +10,11 @@ Behavior Driven Development (BDD) is an Agile software development process that 
 **BDD Format to write test case:**
 
 **Given – When – Then - And** :
-* Given: Some given context (Preconditions).
-* When: Some Action is performed (Actions).
-* Then: Particular outcome/consequence after the above step (Results).
-* And : Adds additional conditions or actions to Given, When, or Then steps.
-* But : Specifies exceptions or negative conditions in a step.
+* **Given:** Some given context (Preconditions).
+* **When:** Some Action is performed (Actions).
+* **Then:** Particular outcome/consequence after the above step (Results).
+* **And:** Adds additional conditions or actions to Given, When, or Then steps.
+* **But:** Specifies exceptions or negative conditions in a step.
 
 **Example**
 
