@@ -8,7 +8,8 @@ Behavior Driven Development (BDD) is an Agile software development process that 
 * BDD provides a path that acts as a bridge to overcome the gap between the technical and the non-technical teams because the test cases are commonly written in simple text, i.e. English. The main advantage of BDD is the plain and clearer approach which is easier to understand.
 
 **BDD Format to write test case:**
-**Given – When – Then** Approach :
+
+**Given – When – Then - And** :
 * Given: Some given context (Preconditions).
 * When: Some Action is performed (Actions).
 * Then: Particular outcome/consequence after the above step (Results).
